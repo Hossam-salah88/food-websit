@@ -863,8 +863,6 @@ header {
   padding-top: 3.75rem;
   padding-bottom: 3.75rem;
   background-color: #fff;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .footer__title {
@@ -887,13 +885,9 @@ header {
   margin: 2rem 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(400px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.5rem;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .footer__info {
@@ -945,7 +939,7 @@ header {
 .footer__maps-map {
   border-radius: 15px;
   width: 100%;
-  height: 95%;
+  height: 20rem;
 }
 
 .contact {
