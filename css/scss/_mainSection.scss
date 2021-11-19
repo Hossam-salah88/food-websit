@@ -332,6 +332,8 @@
     padding-top: 3.75rem;
     padding-bottom: 3.75rem;
     background-color: $white;
+    padding-left: 1rem;
+    padding-right: 1rem;
 
     &__title {
         @include font (2.5rem);
@@ -350,8 +352,10 @@
         padding: 1rem;
         margin: 2rem 0;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
         gap: 1.5rem;
+        justify-items: center;
+        align-items: center;
     }
 
 
@@ -372,7 +376,7 @@
 
     &__data {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
         gap: 2rem;
         padding: 1rem;
     }
