@@ -1,0 +1,64 @@
+// =============== Base ====================
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 8.5px;
+    &::-webkit-scrollbar{
+        width: 0.6rem;
+    }
+
+    &::-webkit-scrollbar-track{
+        background: $white;
+    }
+
+    &::-webkit-scrollbar-thumb{
+        background: $green;
+        border-radius: 5px;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+image {
+    max-width: 100%;
+}
+
+
+// ============== LAYOUT =====================
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    // small screen
+    @media (min-width: 768px) {
+        width: 40rem;
+    }
+
+    // medium screen
+    @media (min-width: 992px) {
+        width: 60rem;
+    }
+
+    // larg screen
+    @media (min-width: 1200px) {
+        width: 73.125rem;
+    }
+}
+
+
+

@@ -1,0 +1,466 @@
+// ======== Home Section ===================
+.home {
+    overflow: hidden;
+
+    &__container {
+        padding-top: 3.75rem;
+        padding-bottom: 3.75rem;
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        @media screen and (max-width: 1200px){
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__data {
+        padding: 1rem;
+        @media screen and (max-width: 1200px){
+            order: 2;
+            gap: 16px;
+        }
+    }
+
+    &__title {
+        color: $green;
+        font-size: 1.5rem;
+    }
+
+    &__subtitle {
+        margin: 2rem 0;
+        font-size: 2.5rem;
+        color: $dark-blu;
+    }
+
+    &__info {
+        color: $light-color;
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    &__btn {
+        color: $white;
+        font-size: 1;
+        padding: 0.5rem 1rem;
+        background-color: $green;
+        border-radius: 5px;
+        border: $border;
+
+        &:hover {
+            background-color: $dark-blu;
+        }
+    }
+
+    &__img {
+        position: relative;
+        pointer-events: none;
+        justify-self: center;
+
+        @media screen and (max-width: 1200px){
+            order: 1;
+        }
+
+        &-img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        &-parallImg {
+            max-width: 100%;
+            max-height: 100%;
+            position: absolute;
+            right: 0rem;
+            top: -5rem;
+        }
+    }
+}
+
+// ==================== choose us section =========================
+
+.chooseUs {
+    background-color: $light-bg;
+
+    &__container {
+        padding-top: 3.75rem;
+        padding-bottom: 3.75rem;
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        @media screen and (max-width: 1200px){
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__img {
+        display: flex;
+        align-items: center;
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__data {
+        padding: 1rem;
+    }
+
+    &__title {
+        @include font (2rem);
+        margin-bottom: 1rem;
+    }
+
+    &__subtitle {
+        font-size: 2rem;
+        color: $dark-blu;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    &__paragraph {
+        color: $light-color;
+        margin-bottom: 2rem;
+        line-height: 1.7;
+    }
+
+    &__btn {
+        color: $white;
+        padding: 0.7rem 1.5rem;
+        background-color: $green;
+        font-size: 1.2rem;
+        border-radius: 10px;
+
+        &:hover {
+            background-color: $dark-blu;
+            transition: 0.4s linear;
+        }
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(10.5rem, 1fr));
+        gap: 1rem;
+        margin-top: 3rem;
+    }
+
+    &__card {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem 1.1rem;
+        box-shadow: $box-shadow;
+        background-color: $white;
+        p {
+            color: $dark-blu;
+            font-weight: 800;
+        }
+    }
+}
+
+.cardThree {
+    grid-column: 1/4;
+    @media screen and (max-width: 672px){
+        grid-column: inherit;
+    }
+}
+
+
+// ===================== popular Food Section =======================
+.popularFood {
+
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+
+    &__header {
+        text-align: center;
+        color: $dark-blu;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+
+    }
+
+    &__subheader {
+        text-align: center;
+        @include font (2rem);
+        margin-bottom: 1.5rem;
+    }
+
+    &__cards {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(15.625rem, 1fr));
+    }
+
+    &__card {
+        position: relative;
+        border: $border;
+        cursor: pointer;
+        border-radius: 15px;
+        box-shadow: $box-shadow;
+        overflow: hidden;
+
+        &:hover .popularFood__img {
+            top: 0;
+            transition: 0.5s ease-in-out all;
+        }
+
+        &:hover .popularFood__data {
+            transform: translateY(100%);
+            transition: 0.5s ease-in-out all;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: -103%;
+        left: 0;
+        border-radius: 15px;
+    }
+
+    &__data {
+        padding: 2rem;
+        text-align: center;
+        background-color: $white;
+        padding: 1rem;
+
+        & img {
+            margin: 2rem;
+        }
+    }
+
+    &__title {
+        color: $dark-blu;
+        margin-bottom: 1rem;
+    }
+
+    &__text {
+        color: $light-color;
+    }
+}
+
+// ============== popular Food banner Section ====================
+.popularFood__banner {
+    display: grid;
+    margin-top: 5rem;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    justify-content: center;
+
+
+    &-content {
+        position: relative;
+        justify-self: center;
+        overflow: hidden;
+        border-radius: 10px;
+
+        &:hover img {
+            transform: scale(1.2);
+            transition: 0.4s linear;
+        }
+    }
+    
+
+    &-img {
+        max-width: 100%;
+        height: 30rem;
+        object-fit: cover;
+        border-radius: 10px;
+
+    }
+
+    &-info {
+        position: absolute;
+        top: 1.9rem;
+        left: 1.6875rem;
+        color: $white;
+    }
+
+    &-title {
+        font-size: 1.5rem;
+
+        &.active {
+            color: $light-color;
+            text-align: center;
+
+            @media screen and (max-width: 621px){
+                text-align: start;
+            }
+        }
+    }
+
+    &-subtitle {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+
+        &.active {
+            color: $dark-blu;
+            text-align: center;
+
+            @media screen and (max-width: 611px){
+                text-align: start;
+            }
+        }
+    }
+
+    &-btn {
+        color: $white;
+        padding: 0.5rem 1.3rem;
+        background-color: $green;
+        font-size: 1rem;
+        border-radius: 10px;
+        position: absolute;
+
+        &.active {
+            text-align: center;
+            top: 6.5rem;
+            transform: translate(50%);
+        }
+
+        &:hover {
+            background-color: $dark-blu;
+            transition: 0.4s linear;
+        }
+    }
+}
+
+// ================ Footer section============
+
+.footer {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+    background-color: $white;
+
+    &__title {
+        @include font (2.5rem);
+        margin-bottom: 0.3rem;
+        text-align: center;
+    }
+
+    &__subtitle {
+        color: $dark-blu;
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &__content {
+        padding: 1rem;
+        margin: 2rem 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
+        gap: 1.5rem;
+    }
+
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $light-bg;
+    }
+
+    &__text {
+        font-size: 1.2rem;
+        color: $dark-blu;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    &__data {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    &__maps {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        &-map{
+            border-radius: 15px;
+            width: 100%;
+            height: 95%;
+        }
+    }
+}
+
+.contact {
+    padding: 1rem;
+    &__inputs {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+    }
+
+    &__label {
+        color: $light-color;
+        font-size: 1rem;
+        margin-bottom: 0.4rem;
+    }
+
+    &__input {
+        background-color: $light-bg;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        &::placeholder {
+            padding: 0.5rem;
+        }
+    }
+}
+
+input {
+    height: 2.5rem;
+}
+
+
+
+
+
+// ============ Scroll Btn ===============
+
+.scrollTop-btn {
+    position: fixed;
+    top: -100%;
+    right: 1.5rem;
+    padding: 8px 10px;
+    background-color: $green;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    color: $white;
+    transition: 1.5s linear;
+
+    &.active {
+        top: calc(100% - 6rem);
+    }
+}
+
+// ================== loder section =================
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+    &.fade-out {
+        top: -102%;
+        transition: 0.4s linear;
+    }
+}
+
+
+
+

@@ -1,0 +1,367 @@
+header {
+    box-shadow: $box-shadow;
+    background-color: $white;
+    position: sticky;
+    top:0; left:0; right:0;
+    z-index: 1000;
+}
+
+// =================== NaveBar Section =====================
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    z-index: 1000;
+    position: relative;
+
+    &__logo {
+        justify-self: start;
+        font-size: 2rem;
+        font-weight: bolder;
+        color: $dark-blu;
+    }
+
+    &__logo-icon {
+        color: $green;
+    }
+
+    &__list {
+        display: flex;
+
+        @media screen and (max-width: 786px){
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: $white;
+            border-top: $border;
+            border-bottom: $border;
+            flex-direction: column;
+            clip-path: polygon(0 1%, 100% 0, 100% 0, 0 0);
+        }
+
+        &.active {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        }
+    }
+
+    &__item {
+        padding: 0.5rem;
+    }
+
+    &__link {
+        color: $light-color;
+        font-size: 1.25rem;
+        &:hover {
+            color: $green;
+        }
+
+        @media screen and (max-width: 786px){
+            font-size: 1.2rem;
+        }
+    }
+//==================== Nav BAr Btn =================
+    &__btn {
+        justify-self: end;
+        font-size: 1.5625rem;
+
+        &-icon {
+            cursor: pointer;
+            padding: 0.5rem;
+            background-color: $light-bg;
+            border-radius: 5px;
+
+            &.bg-active {
+                background-color: $green;
+                color: $white;
+            }
+
+            &:hover {
+                color: $white;
+                background-color: $green;
+            }
+        }
+    }
+}
+
+
+#menu-btn {
+    display: none;
+    @media screen and (max-width: 786px){
+        display: inline-block;
+    }
+}
+//============================ Search form section ====================
+.search__form {
+    position: fixed;
+    top: 7rem;
+    left: 0;
+    right: 0;
+    height: calc(100vh - 7rem);
+    background-color: $white;
+    display: none;
+    padding: 0 2rem;
+    animation: fadeUp .6s linear;
+    z-index: 100;
+
+    &.active {
+        display: block;
+    }
+
+    form {
+        height: 5.5rem;
+        border-bottom: 0.2rem solid $dark-blu;
+        display: flex;
+        align-items: center;
+
+        input {
+            background: none;
+            outline: none;
+            border: none;
+            height: 100%;
+            width: 100%;
+            font-size: 1.3rem;
+            color: $dark-blu;
+            padding: 0.5rem;
+        }
+
+        label {
+            font-size: 2rem;
+            cursor: pointer;
+            &:hover {
+                color: $green;
+            }
+        }
+    }
+}
+
+
+
+// ======================= Shopping Card Section =======================
+
+.shoppingCard {
+    position: fixed;
+    height: calc(100vh - 7rem);
+    top: 7rem;
+    left: 0;
+    right: 0;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    z-index: 100;
+    background-color: $white;
+    overflow-y: scroll;
+    animation: fadeUp .6s linear;
+
+    display: none;
+
+    &.active {
+        display: block;
+    }
+    &::-webkit-scrollbar{
+        width: 0.6rem;
+    }
+
+    &::-webkit-scrollbar-track{
+        background: $white;
+    }
+
+    &::-webkit-scrollbar-thumb{
+        background: $dark-blu;
+        border-radius: 5px;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
+        gap: 3rem;
+    }
+
+    &__data {
+        background-color:$light-bg;
+        border-radius: 10px;
+        position: relative;
+    }
+
+
+    &__header {
+        margin: 2rem 0;
+        text-align: center;
+    }
+
+    &__img {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 1rem;
+
+        img {
+            width: 9.375rem;
+            height: 9.375rem;
+        }
+    }
+
+    &__info {
+        padding: 2rem;
+    }
+
+    &__icon {
+        position: absolute;
+        top: 0;
+        left: 90%;
+        font-size: 1.5rem;
+        color: $dark-blu;
+        
+
+        :hover{
+            color: $green;
+            transition: 0.4s color;
+        }
+    }
+
+    &__price {
+        color: $light-color;
+
+        span {
+            color: $green;
+        }
+    }
+
+    &__subtitle {
+        color: $light-color;
+    }
+
+
+
+    &__total-subtotal{
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $dark-blu;
+        margin-bottom: 1rem;
+
+        span {
+            color: $green;
+        }
+    }
+}
+
+//================ section Shoppin CArd Totla ====================
+
+.shoppingCard__total {
+    padding: 60px;
+    margin-top: 3rem;
+    background-color: $light-bg;
+    border-radius: 5px;
+    border: $border;
+    animation: fadeUp .6s linear 0.4s backwards;
+
+
+    @media screen and (max-width: 700px){
+        text-align: center;
+    }
+
+    
+    &-total {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $dark-blu;
+        margin-bottom: 2rem;
+
+        span {
+            color: $green;
+        }
+    }
+
+    &-btn{
+        padding: 1rem;
+        background-color: $green;
+        border-radius: 10px;
+        color: $white;
+        text-transform: capitalize;
+
+        &:hover {
+            background-color: $dark-blu;
+            transition: 0.6s all;
+        }
+    }
+}
+
+// ============== Section login Form ====================
+
+.login {
+    position: fixed;
+    height: calc(100vh - 7rem);
+    top: 7rem;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: $white;
+    justify-content: center;
+    align-items: center;
+    animation: fadeUp .6s linear;
+    display: none;
+
+    &.active {
+        display: flex;
+    }
+
+
+    &__container {
+        padding: 1rem;
+        border: $border;
+        border-radius: 5px;
+    }
+
+    &__header {
+        margin: 2rem 0;
+        font-size: 2rem;
+        color: $dark-blu;
+
+    }
+
+    &__input-email,
+    &__input-pass {
+        display: block;
+        background-color: $light-bg;
+        border-radius: 5px;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+    &__input-cheackbox {
+        font-size: 0.5rem;
+        cursor: pointer;
+        margin: 2rem 0;
+    }
+
+
+    &__btn {
+        display: block;
+        background-color: $green;
+        color: $white;
+        font-size: 1.3rem;
+        text-align: center;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+    }
+
+    &__fotter {
+        color: $light-color;
+
+        a{
+            color: $green;
+        }
+
+        :hover{
+            color: $dark-blu;
+            text-decoration: underline;
+        }
+    }
+}
+
+
+
+
+
+
