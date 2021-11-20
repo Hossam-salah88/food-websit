@@ -14,12 +14,19 @@ header {
     padding: 2rem;
     z-index: 1000;
     position: relative;
+    @media screen and (max-width: 330px){
+        padding: 1rem;
+    }
 
     &__logo {
         justify-self: start;
         font-size: 2rem;
         font-weight: bolder;
         color: $dark-blu;
+
+        @media screen and (max-width: 330px){
+            font-size: 1.5rem;
+        }
     }
 
     &__logo-icon {
@@ -65,6 +72,10 @@ header {
     &__btn {
         justify-self: end;
         font-size: 1.5625rem;
+
+        @media screen and (max-width: 330px){
+            font-size: 1.3rem;
+        }
 
         &-icon {
             cursor: pointer;

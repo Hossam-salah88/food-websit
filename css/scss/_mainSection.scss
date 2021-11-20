@@ -30,6 +30,10 @@
         margin: 2rem 0;
         font-size: 2.5rem;
         color: $dark-blu;
+
+        @media screen and (max-width: 391px){
+            font-size: 1.7rem;
+        }
     }
 
     &__info {
@@ -113,6 +117,10 @@
         color: $dark-blu;
         font-weight: bold;
         margin-bottom: 1rem;
+
+        @media screen and (max-width: 391px){
+            font-size: 1.5rem;
+        }
     }
 
     &__paragraph {
@@ -333,7 +341,6 @@
     padding-bottom: 3.75rem;
     background-color: $white;
 
-
     &__title {
         @include font (2.5rem);
         margin-bottom: 0.3rem;
@@ -345,13 +352,17 @@
         font-size: 2.5rem;
         font-weight: 700;
         text-align: center;
+
+        @media screen and (max-width: 391px){
+            font-size: 1.5rem;
+        }
     }
 
     &__content {
         padding: 1rem;
         margin: 2rem 0;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
         gap: 1.5rem;
     }
 
@@ -375,7 +386,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
         gap: 2rem;
-        padding: 1rem;  
+        padding: 1rem;
     }
 
     &__maps {
@@ -386,7 +397,7 @@
 
         &-map{
             border-radius: 15px;
-            width: 100%;
+            width: 50%;
             height: 20rem;
         }
     }
@@ -394,11 +405,11 @@
 
 .contact {
     padding: 1rem;
-    &__inputs {
+
+        &__inputs {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-
     }
 
     &__label {
@@ -421,10 +432,6 @@
 input {
     height: 2.5rem;
 }
-
-
-
-
 
 // ============ Scroll Btn ===============
 

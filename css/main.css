@@ -106,12 +106,24 @@ header {
   position: relative;
 }
 
+@media screen and (max-width: 330px) {
+  .nav {
+    padding: 1rem;
+  }
+}
+
 .nav__logo {
   -ms-grid-column-align: start;
       justify-self: start;
   font-size: 2rem;
   font-weight: bolder;
   color: #130f40;
+}
+
+@media screen and (max-width: 330px) {
+  .nav__logo {
+    font-size: 1.5rem;
+  }
 }
 
 .nav__logo-icon {
@@ -170,6 +182,12 @@ header {
   -ms-grid-column-align: end;
       justify-self: end;
   font-size: 1.5625rem;
+}
+
+@media screen and (max-width: 330px) {
+  .nav__btn {
+    font-size: 1.3rem;
+  }
 }
 
 .nav__btn-icon {
@@ -520,6 +538,12 @@ header {
   color: #130f40;
 }
 
+@media screen and (max-width: 391px) {
+  .home__subtitle {
+    font-size: 1.7rem;
+  }
+}
+
 .home__info {
   color: #666;
   font-size: 1rem;
@@ -616,6 +640,12 @@ header {
   color: #130f40;
   font-weight: bold;
   margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 391px) {
+  .chooseUs__subtitle {
+    font-size: 1.5rem;
+  }
 }
 
 .chooseUs__paragraph {
@@ -880,13 +910,19 @@ header {
   text-align: center;
 }
 
+@media screen and (max-width: 391px) {
+  .footer__subtitle {
+    font-size: 1.5rem;
+  }
+}
+
 .footer__content {
   padding: 1rem;
   margin: 2rem 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  -ms-grid-columns: (minmax(270px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   gap: 1.5rem;
 }
 
@@ -938,7 +974,7 @@ header {
 
 .footer__maps-map {
   border-radius: 15px;
-  width: 100%;
+  width: 50%;
   height: 20rem;
 }
 
