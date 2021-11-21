@@ -386,9 +386,13 @@
     padding-bottom: 1.5rem;
     &__data {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(17.5rem, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
         gap: 2rem;
         padding: 1rem;
+
+        @media screen and (max-width: 391px){
+            grid-template-columns: repeat(auto-fill, minmax(285px, 1fr));
+        }
     }
 
     &__maps {

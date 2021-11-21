@@ -120,7 +120,7 @@ header {
   color: #130f40;
 }
 
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 352px) {
   .nav__logo {
     font-size: 1.5rem;
   }
@@ -172,7 +172,7 @@ header {
   color: #27ae60;
 }
 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 352px) {
   .nav__link {
     font-size: 1.2rem;
   }
@@ -956,10 +956,17 @@ header {
 .footer__data {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(17.5rem, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(17.5rem, 1fr));
+  -ms-grid-columns: (minmax(350px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 2rem;
   padding: 1rem;
+}
+
+@media screen and (max-width: 391px) {
+  .footer__data {
+    -ms-grid-columns: (minmax(285px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(285px, 1fr));
+  }
 }
 
 .footer__maps {

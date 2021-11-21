@@ -24,7 +24,7 @@ header {
         font-weight: bolder;
         color: $dark-blu;
 
-        @media screen and (max-width: 330px){
+        @media screen and (max-width: 352px){
             font-size: 1.5rem;
         }
     }
@@ -64,7 +64,7 @@ header {
             color: $green;
         }
 
-        @media screen and (max-width: 786px){
+        @media screen and (max-width: 352px){
             font-size: 1.2rem;
         }
     }
