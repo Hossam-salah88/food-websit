@@ -889,13 +889,12 @@ header {
   transition: 0.4s linear;
 }
 
-.footer {
+.orderNow {
   padding-top: 3.75rem;
-  padding-bottom: 3.75rem;
   background-color: #fff;
 }
 
-.footer__title {
+.orderNow__title {
   font-family: 'Satisfy', cursive;
   font-size: 2.5rem;
   color: #27ae60;
@@ -903,7 +902,7 @@ header {
   text-align: center;
 }
 
-.footer__subtitle {
+.orderNow__subtitle {
   color: #130f40;
   font-size: 2.5rem;
   font-weight: 700;
@@ -911,12 +910,12 @@ header {
 }
 
 @media screen and (max-width: 391px) {
-  .footer__subtitle {
+  .orderNow__subtitle {
     font-size: 1.5rem;
   }
 }
 
-.footer__content {
+.orderNow__content {
   padding: 1rem;
   margin: 2rem 0;
   display: -ms-grid;
@@ -926,7 +925,7 @@ header {
   gap: 1.5rem;
 }
 
-.footer__info {
+.orderNow__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -943,23 +942,28 @@ header {
   background-color: #f7f7f7;
 }
 
-.footer__text {
+.orderNow__text {
   font-size: 1.2rem;
   color: #130f40;
   font-weight: 600;
   margin-bottom: 1rem;
 }
 
+.footer {
+  padding-bottom: 1.5rem;
+}
+
 .footer__data {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(400px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  -ms-grid-columns: (minmax(17.5rem, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(17.5rem, 1fr));
   gap: 2rem;
   padding: 1rem;
 }
 
 .footer__maps {
+  padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -969,12 +973,11 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  overflow: hidden;
 }
 
 .footer__maps-map {
   border-radius: 15px;
-  width: 50%;
+  width: 100%;
   height: 20rem;
 }
 
