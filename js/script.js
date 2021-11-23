@@ -74,14 +74,14 @@ home.onmousemove = (e) => {
 }
 
 // // ============================ loder Section =====================
-const loaderContainer = document.querySelector('.loader')
+// const loaderContainer = document.querySelector('.loader')
 
-function loader () {
-    loaderContainer.classList.add('fade-out');
-}
+// function loader () {
+//     loaderContainer.classList.add('fade-out');
+// }
 
-function fadeOut () {
-    setInterval(loader, 3000)
-}
+// function fadeOut () {
+//     setInterval(loader, 3000)
+// }
 
-window.onload = fadeOut();
+// window.onload = fadeOut();

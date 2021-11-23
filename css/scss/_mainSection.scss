@@ -22,6 +22,7 @@
     }
 
     &__title {
+        display: block;
         color: $green;
         font-size: 1.5rem;
     }
@@ -49,7 +50,6 @@
         background-color: $green;
         border-radius: 5px;
         border: $border;
-
         &:hover {
             background-color: $dark-blu;
         }
