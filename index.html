@@ -1,377 +1,513 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- ======================= CSs ============== -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" />
     <!--================ Fontawesome css ============ -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
     <title>food web site</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- ======================== Header Section=================== -->
     <header class="header" id="header">
-        <nav class="container nav">
-            <a href="#" class="nav__logo"> 
-                <i class="fa fa-cutlery nav__logo-icon" aria-hidden="true"></i> food
-            </a>
+      <nav class="container nav">
+        <a href="#" class="nav__logo">
+          <i class="fa fa-cutlery nav__logo-icon" aria-hidden="true"></i> food
+        </a>
 
-            <div class="nav__menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Home</a>
-                    </li>
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Home</a>
+            </li>
 
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">About</a>
-                    </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">About</a>
+            </li>
 
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Popular</a>
-                    </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Popular</a>
+            </li>
 
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Menu</a>
-                    </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Menu</a>
+            </li>
 
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Order</a>
-                    </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Order</a>
+            </li>
 
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Blogs</a>
-                    </li>
-                </ul>
-            </div>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Blogs</a>
+            </li>
+          </ul>
+        </div>
         <!-- ==================== Navbar Icon================= -->
-            <div class="nav__btn">
-                <div id="menu-btn" class="fa fa-bars nav__btn-icon"></div>
-                <div id="search-btn" class="fa fa-search nav__btn-icon"></div>
-                <div id="cart-btn" class="fa fa-shopping-cart nav__btn-icon"></div>
-                <div id="login-btn" class="fa fa-user nav__btn-icon"></div>
-            </div>
-        </nav> 
+        <div class="nav__btn">
+          <div id="menu-btn" class="fa fa-bars nav__btn-icon"></div>
+          <div id="search-btn" class="fa fa-search nav__btn-icon"></div>
+          <div id="cart-btn" class="fa fa-shopping-cart nav__btn-icon"></div>
+          <div id="login-btn" class="fa fa-user nav__btn-icon"></div>
+        </div>
+      </nav>
     </header>
     <!--======================== Search Form ========================= -->
     <section class="search__form container">
-        <form>
-            <input type="search" placeholder="search hear...." id="search-box">
-            <label for="search-box" class="fa fa-search"></label>
-        </form>
+      <form>
+        <input type="search" placeholder="search hear...." id="search-box" />
+        <label for="search-box" class="fa fa-search"></label>
+      </form>
     </section>
 
     <!--======================= Shoppin Cart Section ========================= -->
     <section class="container shoppingCard">
-        <div class="shoppingCard__products">
-            <h2 class="shoppingCard__header">
-                Your Products
-            </h2>
-            <div class="shoppingCard__content">
-            
-            <!-- =================== Shooping Card 1 ============================ -->
-            <div class="shoppingCard__data">
-                <div class="shoppingCard__img">
-                    <img src="img/menu-1.png" alt="shoppindCard img">
-                </div>
-                <div class="shoppingCard__info">
-                    <a href="" class="shoppingCard__icon"><i class="fa fa-times" aria-hidden="true"></i></a>
-                    <h2 class="shoppingCard__title">Delicious Food</h2>
-                    <p class="shoppingCard__subtitle">Quantity : <span class="shoppingCard__subtitle-number">1</span></p> 
-                    <p class="shoppingCard__price">Price : <span class="shoppingCard__price-number">$40.00</span> </p>
-                </div> 
+      <div class="shoppingCard__products">
+        <h2 class="shoppingCard__header">Your Products</h2>
+        <div class="shoppingCard__content">
+          <!-- =================== Shooping Card 1 ============================ -->
+          <div class="shoppingCard__data">
+            <div class="shoppingCard__img">
+              <img src="img/menu-1.png" alt="shoppindCard img" />
             </div>
+            <div class="shoppingCard__info">
+              <a href="" class="shoppingCard__icon"
+                ><i class="fa fa-times" aria-hidden="true"></i
+              ></a>
+              <h2 class="shoppingCard__title">Delicious Food</h2>
+              <p class="shoppingCard__subtitle">
+                Quantity : <span class="shoppingCard__subtitle-number">1</span>
+              </p>
+              <p class="shoppingCard__price">
+                Price : <span class="shoppingCard__price-number">$40.00</span>
+              </p>
+            </div>
+          </div>
 
-            <!-- =================== Shooping Card 2 ============================ -->
-            <div class="shoppingCard__data">
-                <div class="shoppingCard__img">
-                    <img src="img/menu-2.png" alt="shoppindCard img">
-                </div>
-                <div class="shoppingCard__info">
-                    <a href="" class="shoppingCard__icon"><i class="fa fa-times" aria-hidden="true"></i></a>
-                    <h2 class="shoppingCard__title">Delicious Food</h2>
-                    <p class="shoppingCard__subtitle">Quantity : <span class="shoppingCard__subtitle-number">1</span></p> 
-                    <p class="shoppingCard__price">Price : <span class="shoppingCard__price-number">$40.00</span> </p>
-                </div> 
+          <!-- =================== Shooping Card 2 ============================ -->
+          <div class="shoppingCard__data">
+            <div class="shoppingCard__img">
+              <img src="img/menu-2.png" alt="shoppindCard img" />
             </div>
+            <div class="shoppingCard__info">
+              <a href="" class="shoppingCard__icon"
+                ><i class="fa fa-times" aria-hidden="true"></i
+              ></a>
+              <h2 class="shoppingCard__title">Delicious Food</h2>
+              <p class="shoppingCard__subtitle">
+                Quantity : <span class="shoppingCard__subtitle-number">1</span>
+              </p>
+              <p class="shoppingCard__price">
+                Price : <span class="shoppingCard__price-number">$40.00</span>
+              </p>
+            </div>
+          </div>
 
-            <!-- =================== Shooping Card 3 ============================ -->
-            <div class="shoppingCard__data">
-                <div class="shoppingCard__img">
-                    <img src="img/menu-3.png" alt="shoppindCard img">
-                </div>
-                <div class="shoppingCard__info">
-                    <a href="" class="shoppingCard__icon"><i class="fa fa-times" aria-hidden="true"></i></a>
-                    <h2 class="shoppingCard__title">Delicious Food</h2>
-                    <p class="shoppingCard__subtitle">Quantity : <span class="shoppingCard__subtitle-number">1</span></p> 
-                    <p class="shoppingCard__price">Price : <span class="shoppingCard__price-number">$40.00</span> </p>
-                </div>  
+          <!-- =================== Shooping Card 3 ============================ -->
+          <div class="shoppingCard__data">
+            <div class="shoppingCard__img">
+              <img src="img/menu-3.png" alt="shoppindCard img" />
             </div>
+            <div class="shoppingCard__info">
+              <a href="" class="shoppingCard__icon"
+                ><i class="fa fa-times" aria-hidden="true"></i
+              ></a>
+              <h2 class="shoppingCard__title">Delicious Food</h2>
+              <p class="shoppingCard__subtitle">
+                Quantity : <span class="shoppingCard__subtitle-number">1</span>
+              </p>
+              <p class="shoppingCard__price">
+                Price : <span class="shoppingCard__price-number">$40.00</span>
+              </p>
+            </div>
+          </div>
 
-            <!-- =================== Shooping Card 4 ============================ -->
-            <div class="shoppingCard__data">
-                <div class="shoppingCard__img">
-                    <img src="img/menu-4.png" alt="shoppindCard img">
-                </div>
-                <div class="shoppingCard__info">
-                    <a href="" class="shoppingCard__icon"><i class="fa fa-times" aria-hidden="true"></i></a>
-                    <h2 class="shoppingCard__title">Delicious Food</h2>
-                    <p class="shoppingCard__subtitle">Quantity : <span class="shoppingCard__subtitle-number">1</span></p> 
-                    <p class="shoppingCard__price">Price : <span class="shoppingCard__price-number">$40.00</span> </p>
-                </div> 
+          <!-- =================== Shooping Card 4 ============================ -->
+          <div class="shoppingCard__data">
+            <div class="shoppingCard__img">
+              <img src="img/menu-4.png" alt="shoppindCard img" />
             </div>
+            <div class="shoppingCard__info">
+              <a href="" class="shoppingCard__icon"
+                ><i class="fa fa-times" aria-hidden="true"></i
+              ></a>
+              <h2 class="shoppingCard__title">Delicious Food</h2>
 
-            <!-- =================== Shooping Card 5 ============================ -->
-            <div class="shoppingCard__data">
-                <div class="shoppingCard__img">
-                    <img src="img/menu-5.png" alt="shoppindCard img">
-                </div>
-                <div class="shoppingCard__info">
-                    <a href="" class="shoppingCard__icon"><i class="fa fa-times" aria-hidden="true"></i></a>
-                    <h2 class="shoppingCard__title">Delicious Food</h2>
-                    <p class="shoppingCard__subtitle">Quantity : <span class="shoppingCard__subtitle-number">1</span></p> 
-                    <p class="shoppingCard__price">Price : <span class="shoppingCard__price-number">$40.00</span> </p>
-                </div> 
+              <p class="shoppingCard__subtitle">
+                Quantity : <span class="shoppingCard__subtitle-number">1</span>
+              </p>
+              <p class="shoppingCard__price">
+                Price : <span class="shoppingCard__price-number">$40.00</span>
+              </p>
             </div>
+          </div>
+
+          <!-- =================== Shooping Card 5 ============================ -->
+          <div class="shoppingCard__data">
+            <div class="shoppingCard__img">
+              <img src="img/menu-5.png" alt="shoppindCard img" />
             </div>
+            <div class="shoppingCard__info">
+              <a href="" class="shoppingCard__icon"
+                ><i class="fa fa-times" aria-hidden="true"></i
+              ></a>
+              <h2 class="shoppingCard__title">Delicious Food</h2>
+              <p class="shoppingCard__subtitle">
+                Quantity : <span class="shoppingCard__subtitle-number">1</span>
+              </p>
+              <p class="shoppingCard__price">
+                Price : <span class="shoppingCard__price-number">$40.00</span>
+              </p>
+            </div>
+          </div>
         </div>
-        <!-- =================== Total Form ============================ -->
-        <div class="shoppingCard__total">
-            <h2 class="shoppingCard__header">
-                Your Products
-            </h2> 
-            <p class="shoppingCard__total-subtotal">Subtotal : <span>$200</span> </p>            
-            <p class="shoppingCard__total-total">Total : <span>$200</span></p>
-            <a href="#" class="shoppingCard__total-btn">proceed To Cheackout</a>             
-        </div>
+      </div>
+      <!-- =================== Total Form ============================ -->
+      <div class="shoppingCard__total">
+        <h2 class="shoppingCard__header">Your Products</h2>
+        <p class="shoppingCard__total-subtotal">Subtotal : <span>$200</span></p>
+        <p class="shoppingCard__total-total">Total : <span>$200</span></p>
+        <a href="#" class="shoppingCard__total-btn">proceed To Cheackout</a>
+      </div>
     </section>
 
     <!-- ====================== log in Form ========================== -->
-<section class="login container">
-        <div class="login__container">
-            <h2 class="login__header">login form</h2>
-            <input type="email" placeholder="enter your email" class="login__input-email">
-            <input type="password" placeholder="enter your password" class="login__input-pass">
-            <input type="checkbox" id="rember" name="rember" class="login__input-cheackbox"> 
-            <label for="rember">Remember Me</label>
-            <a href="#" class="login__btn">Login Now</a>
-            <p class="login__fotter">Forget Password? <a href="#">Click Here</a></p>
-            <p class="login__fotter">Don't Have An Account? <a href="#">Create One</a></p>
-        </div>
-</section>
-<!-- ========================== main Section ================================== -->
-<main class="main__section">
-    <!--======================= Home Section ======================== -->
-    <section class="home" id="home">
+    <section class="login container">
+      <div class="login__container">
+        <h2 class="login__header">login form</h2>
+        <input
+          type="email"
+          placeholder="enter your email"
+          class="login__input-email"
+        />
+        <input
+          type="password"
+          placeholder="enter your password"
+          class="login__input-pass"
+        />
+        <input
+          type="checkbox"
+          id="rember"
+          name="rember"
+          class="login__input-cheackbox"
+        />
+        <label for="rember">Remember Me</label>
+        <a href="#" class="login__btn">Login Now</a>
+        <p class="login__fotter">Forget Password? <a href="#">Click Here</a></p>
+        <p class="login__fotter">
+          Don't Have An Account? <a href="#">Create One</a>
+        </p>
+      </div>
+    </section>
+    <!-- ========================== main Section ================================== -->
+    <main class="main__section">
+      <!--======================= Home Section ======================== -->
+      <section class="home" id="home">
         <div class="home__container container">
-            <div class="home__data">
-                <span class="home__title">Welcome Foodies</span>
-                <h2 class="home__subtitle">Different Spices For The Different Tastes 😋</h2>
-                <p class="home__info">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Omnis Unde Dolores Temporibus Hic Quam Debitis Tenetur Harum Nemo.</p>
-                <div>
-                    <a href="#" class="home__btn">Order Now</a>
-                </div>
+          <div class="home__data">
+            <span class="home__title">Welcome Foodies</span>
+            <h2 class="home__subtitle">
+              Different Spices For The Different Tastes 😋
+            </h2>
+            <p class="home__info">
+              Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Omnis
+              Unde Dolores Temporibus Hic Quam Debitis Tenetur Harum Nemo.
+            </p>
+            <div>
+              <a href="#" class="home__btn">Order Now</a>
             </div>
+          </div>
 
-            <div class="home__img">
-                <img src="img/home-img.png" alt="home section img" class="home__img-img">
-                <img src="img/home-parallax-img.png" alt="home section img" class="home__img-parallImg">
-            </div>
+          <div class="home__img">
+            <img
+              src="img/home-img.png"
+              alt="home section img"
+              class="home__img-img"
+            />
+            <img
+              src="img/home-parallax-img.png"
+              alt="home section img"
+              class="home__img-parallImg"
+            />
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- ======================= why choose us section ====================== -->
-    <section class="chooseUs" id="cooseUs">
+      <!-- ======================= why choose us section ====================== -->
+      <section class="chooseUs" id="cooseUs">
         <div class="chooseUs__container container">
-            <div class="chooseUs__img">
-                <img src="img/about-img.png" alt="about img">
+          <div class="chooseUs__img">
+            <img src="img/about-img.png" alt="about img" />
+          </div>
+          <div class="chooseUs__data">
+            <h3 class="chooseUs__title">Why Choose Us?</h3>
+            <p class="chooseUs__subtitle">What's Make Our Food Delicious!</p>
+            <p class="chooseUs__paragraph">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non,
+              dolorum! Iste possimus sit repellat asperiores. Possimus iusto,
+              tenetur iste hic rem.
+            </p>
+            <div>
+              <a href="#" class="chooseUs__btn">Read More</a>
             </div>
-            <div class="chooseUs__data">
-                <h3 class="chooseUs__title">Why Choose Us?</h3>
-                <p class="chooseUs__subtitle">What's Make Our Food Delicious!</p>
-                <p class="chooseUs__paragraph">Lorem ipsum dolor, sit amet consectetur
-                    adipisicing elit. Non, dolorum! Iste possimus sit repellat asperiores.
-                    Possimus iusto, tenetur iste hic rem.</p>
-                    <div>
-                        <a href="#" class="chooseUs__btn">Read More</a>
-                    </div>
-                <div class="chooseUs__cards">
-            <!--=============== chosseUs card 1 =================-->
-                    <div class="chooseUs__card">
-                        <img src="img/serv-1.png" alt="servers image">
-                        <p class="choodeUs__card-info">Fast Delivery</p>
-                    </div>
-            <!--=============== chosseUs card 2 =================-->
-                    <div class="chooseUs__card">
-                        <img src="img/serv-2.png" alt="servers image">
-                        <p class="choodeUs__card-info">Fresh Food</p>
-                    </div>
-            <!--=============== chosseUs card 3 =================-->
-                    <div class="chooseUs__card">
-                        <img src="img/serv-3.png" alt="servers image">
-                        <p class="choodeUs__card-info">Best Quality</p>
-                    </div>
-            <!--=============== chosseUs card 4 =================-->
-                    <div class="chooseUs__card cardThree">
-                        <img src="img/serv-4.png" alt="servers image">
-                        <p class="choodeUs__card-info">24/7 Support</p>
-                    </div>                    
-                </div>
+            <div class="chooseUs__cards">
+              <!--=============== chosseUs card 1 =================-->
+              <div class="chooseUs__card">
+                <img src="img/serv-1.png" alt="servers image" />
+                <p class="choodeUs__card-info">Fast Delivery</p>
+              </div>
+              <!--=============== chosseUs card 2 =================-->
+              <div class="chooseUs__card">
+                <img src="img/serv-2.png" alt="servers image" />
+                <p class="choodeUs__card-info">Fresh Food</p>
+              </div>
+              <!--=============== chosseUs card 3 =================-->
+              <div class="chooseUs__card">
+                <img src="img/serv-3.png" alt="servers image" />
+                <p class="choodeUs__card-info">Best Quality</p>
+              </div>
+              <!--=============== chosseUs card 4 =================-->
+              <div class="chooseUs__card cardThree">
+                <img src="img/serv-4.png" alt="servers image" />
+                <p class="choodeUs__card-info">24/7 Support</p>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-    <!--======================== popular Food Section ======================== -->
-    <section class="popularFood" id="popular-food">
+      </section>
+      <!--======================== popular Food Section ======================== -->
+      <section class="popularFood" id="popular-food">
         <div class="popularFood__container container">
-            <h2 class="popularFood__header">Popular Food</h2>
-            <p class="popularFood__subheader">Our Special Dishes</p>
+          <h2 class="popularFood__header">Popular Food</h2>
+          <p class="popularFood__subheader">Our Special Dishes</p>
 
-            <div class="popularFood__cards">
-                    <!--================== popular Food card 1 ============================ -->
-                    <div class="popularFood__card">
-                        <img src="img/s-img-1.jpg" alt="img of the meal" class="popularFood__img">
-                        <div class="popularFood__data">
-                            <img src="img/s-1.png" alt="logo of the meal">
-                            <h2 class="popularFood__title">tasty burger</h2>
-                            <p class="popularFood__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
-                        </div>
-                    </div>
-
-                    <!--===================== popular Food card 2 ============================ -->
-                    <div class="popularFood__card">
-                        <img src="img/s-img-2.jpg" alt="img of the meal" class="popularFood__img">
-                        <div class="popularFood__data">
-                            <img src="img/s-2.png" alt="logo of the meal">
-                            <h2 class="popularFood__title">tasty burger</h2>
-                            <p class="popularFood__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
-                        </div>
-                    </div>
-
-                    <!--===================== popular Food card 3 ============================ -->
-                    <div class="popularFood__card">
-                        <img src="img/s-img-3.jpg" alt="img of the meal" class="popularFood__img">
-                        <div class="popularFood__data">
-                            <img src="img/s-3.png" alt="logo of the meal">
-                            <h2 class="popularFood__title">tasty burger</h2>
-                            <p class="popularFood__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
-                        </div>
-                    </div>
-
-                    <!--===================== popular Food card 4 ============================ -->
-                    <div class="popularFood__card">
-                        <img src="img/s-img-4.jpg" alt="img of the meal" class="popularFood__img">
-                        <div class="popularFood__data">
-                            <img src="img/s-4.png" alt="logo of the meal">
-                            <h2 class="popularFood__title">tasty burger</h2>
-                            <p class="popularFood__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
-                        </div>
-                    </div>
+          <div class="popularFood__cards">
+            <!--================== popular Food card 1 ============================ -->
+            <div class="popularFood__card">
+              <img
+                src="img/s-img-1.jpg"
+                alt="img of the meal"
+                class="popularFood__img"
+              />
+              <div class="popularFood__data">
+                <img src="img/s-1.png" alt="logo of the meal" />
+                <h2 class="popularFood__title">tasty burger</h2>
+                <p class="popularFood__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda inventore neque amet ipsa tenetur voluptates aperiam
+                  tempore libero labore aut.
+                </p>
+              </div>
             </div>
+
+            <!--===================== popular Food card 2 ============================ -->
+            <div class="popularFood__card">
+              <img
+                src="img/s-img-2.jpg"
+                alt="img of the meal"
+                class="popularFood__img"
+              />
+              <div class="popularFood__data">
+                <img src="img/s-2.png" alt="logo of the meal" />
+                <h2 class="popularFood__title">tasty burger</h2>
+                <p class="popularFood__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda inventore neque amet ipsa tenetur voluptates aperiam
+                  tempore libero labore aut.
+                </p>
+              </div>
+            </div>
+
+            <!--===================== popular Food card 3 ============================ -->
+            <div class="popularFood__card">
+              <img
+                src="img/s-img-3.jpg"
+                alt="img of the meal"
+                class="popularFood__img"
+              />
+              <div class="popularFood__data">
+                <img src="img/s-3.png" alt="logo of the meal" />
+                <h2 class="popularFood__title">tasty burger</h2>
+                <p class="popularFood__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda inventore neque amet ipsa tenetur voluptates aperiam
+                  tempore libero labore aut.
+                </p>
+              </div>
+            </div>
+
+            <!--===================== popular Food card 4 ============================ -->
+            <div class="popularFood__card">
+              <img
+                src="img/s-img-4.jpg"
+                alt="img of the meal"
+                class="popularFood__img"
+              />
+              <div class="popularFood__data">
+                <img src="img/s-4.png" alt="logo of the meal" />
+                <h2 class="popularFood__title">tasty burger</h2>
+                <p class="popularFood__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda inventore neque amet ipsa tenetur voluptates aperiam
+                  tempore libero labore aut.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-    <!--===================== popular Food banner ============================ -->
+        <!--===================== popular Food banner ============================ -->
         <div class="popularFood__banner container">
-            <!-- ======================== popular Food banner 1 ================ -->
-            <div class="popularFood__banner-content">
-
-                <img src="img/banner-1.png" class="popularFood__banner-img" alt="popular food image">
-                <div class="popularFood__banner-info">
-                    <h3 class="popularFood__banner-title">Special Offer</h3>
-                    <p class="popularFood__banner-subtitle">Upto 50% Off</p>
-                    <a href="#" class="popularFood__banner-btn">Order Now</a>
-                </div>
+          <!-- ======================== popular Food banner 1 ================ -->
+          <div class="popularFood__banner-content">
+            <img
+              src="img/banner-1.png"
+              class="popularFood__banner-img"
+              alt="popular food image"
+            />
+            <div class="popularFood__banner-info">
+              <h3 class="popularFood__banner-title">Special Offer</h3>
+              <p class="popularFood__banner-subtitle">Upto 50% Off</p>
+              <a href="#" class="popularFood__banner-btn">Order Now</a>
             </div>
-            <!-- ======================== popular Food banner 2 ================ -->
-            <div class="popularFood__banner-content">
-                <img src="img/banner-2.png" class="popularFood__banner-img" alt="popular food image">
-                <div class="popularFood__banner-info">
-                    <h3 class="popularFood__banner-title active">Special Offer</h3>
-                    <p class="popularFood__banner-subtitle active">Upto 25% Extra</p>
-                    <a href="#" class="popularFood__banner-btn active">Order Now</a>
-                </div>
+          </div>
+          <!-- ======================== popular Food banner 2 ================ -->
+          <div class="popularFood__banner-content">
+            <img
+              src="img/banner-2.png"
+              class="popularFood__banner-img"
+              alt="popular food image"
+            />
+            <div class="popularFood__banner-info">
+              <h3 class="popularFood__banner-title active">Special Offer</h3>
+              <p class="popularFood__banner-subtitle active">Upto 25% Extra</p>
+              <a href="#" class="popularFood__banner-btn active">Order Now</a>
             </div>
+          </div>
 
-            <!-- ======================== popular Food banner 3 ================ -->
-            <div class="popularFood__banner-content">
-                <img src="img/banner-3.png" class="popularFood__banner-img" alt="popular food image">
-                <div class="popularFood__banner-info">
-                    <h3 class="popularFood__banner-title">Limited Offer</h3>
-                    <p class="popularFood__banner-subtitle">100% Cashback</p>
-                    <a href="#" class="popularFood__banner-btn">Order Now</a>
-                </div>
-            </div> 
+          <!-- ======================== popular Food banner 3 ================ -->
+          <div class="popularFood__banner-content">
+            <img
+              src="img/banner-3.png"
+              class="popularFood__banner-img"
+              alt="popular food image"
+            />
+            <div class="popularFood__banner-info">
+              <h3 class="popularFood__banner-title">Limited Offer</h3>
+              <p class="popularFood__banner-subtitle">100% Cashback</p>
+              <a href="#" class="popularFood__banner-btn">Order Now</a>
+            </div>
+          </div>
         </div>
+      </section>
+    </main>
+    <!-- ================ order now section =========================== -->
+    <section class="orderNow container" id="orderNow">
+      <h2 class="orderNow__title">Order Now</h2>
+      <p class="orderNow__subtitle">Fastest Home Delivery</p>
+
+      <div class="orderNow__content container">
+        <div class="orderNow__info">
+          <img
+            src="img/icon-1.png"
+            alt="time we are on"
+            class="orderNow__img"
+          />
+          <p class="orderNow__text">7:00am To 10:30pm</p>
+        </div>
+
+        <div class="orderNow__info">
+          <img
+            src="img/icon-2.png"
+            alt="time we are on"
+            class="orderNow__img"
+          />
+          <p class="orderNow__text">7:00am To 10:30pm</p>
+        </div>
+
+        <div class="orderNow__info">
+          <img
+            src="img/icon-3.png"
+            alt="time we are on"
+            class="orderNow__img"
+          />
+          <p class="orderNow__text">7:00am To 10:30pm</p>
+        </div>
+      </div>
     </section>
-</main>
-<!-- ================ order now section =========================== -->
-<section class="orderNow container" id="orderNow">
-    <h2 class="orderNow__title">Order Now</h2>
-    <p class="orderNow__subtitle">Fastest Home Delivery</p>
+    <!-- ================ Footer section =========================== -->
 
-        <div class="orderNow__content container">
-            <div class="orderNow__info">
-                <img src="img/icon-1.png" alt="time we are on" class="orderNow__img">
-                <p class="orderNow__text">7:00am To 10:30pm</p>
-            </div>
-
-            <div class="orderNow__info">
-                <img src="img/icon-2.png" alt="time we are on" class="orderNow__img">
-                <p class="orderNow__text">7:00am To 10:30pm</p>
-            </div>
-
-            <div class="orderNow__info">
-                <img src="img/icon-3.png" alt="time we are on" class="orderNow__img">
-                <p class="orderNow__text">7:00am To 10:30pm</p>
-            </div>
-        </div>
-</section>
-<!-- ================ Footer section =========================== -->
-
-<footer class="footer container" id="footer">
-    <form class="footer__data">
+    <footer class="footer container" id="footer">
+      <form class="footer__data">
         <div action="" class="contact">
-            <div class="contact__inputs">
-                <label for="" class="contact__label">your Name</label>
-                <input type="text" placeholder="customer's name" class="contact__input">
-            </div>
+          <div class="contact__inputs">
+            <label for="" class="contact__label">your Name</label>
+            <input
+              type="text"
+              placeholder="customer's name"
+              class="contact__input"
+            />
+          </div>
 
-            <div class="contact__inputs">
-                <label for="" class="contact__label">Your Order</label>
-                <input type="text" placeholder="Food you want" class="contact__input">
-            </div>
+          <div class="contact__inputs">
+            <label for="" class="contact__label">Your Order</label>
+            <input
+              type="text"
+              placeholder="Food you want"
+              class="contact__input"
+            />
+          </div>
 
-            <div class="contact__inputs">
-                <label for="" class="contact__label">Your details</label>
-                <input type="text" placeholder="Your massage" class="contact__input">
-            </div>
+          <div class="contact__inputs">
+            <label for="" class="contact__label">Your details</label>
+            <input
+              type="text"
+              placeholder="Your massage"
+              class="contact__input"
+            />
+          </div>
 
-            
-            <div class="contact__inputs">
-                <label for="" class="contact__label">Your details</label>
-                <textarea name="" id="" cols="30" rows="10" class="contact__input"></textarea>
-            </div>
+          <div class="contact__inputs">
+            <label for="" class="contact__label">Your details</label>
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              class="contact__input"
+            ></textarea>
+          </div>
         </div>
 
         <div class="footer__maps">
-            <iframe class="footer__maps-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13755.732482657573!2d30.921418030437643!3d30.466332352726045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14587e662f9e048d%3A0x75267884cf57bb9b!2sMinuf%2C%20Madinet%20Menuf%2C%20Menouf%2C%20Menofia%20Governorate!5e0!3m2!1sen!2seg!4v1637297108009!5m2!1sen!2seg" 
-            allowfullscreen="" loading="lazy"></iframe>
+          <iframe
+            class="footer__maps-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13755.732482657573!2d30.921418030437643!3d30.466332352726045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14587e662f9e048d%3A0x75267884cf57bb9b!2sMinuf%2C%20Madinet%20Menuf%2C%20Menouf%2C%20Menofia%20Governorate!5e0!3m2!1sen!2seg!4v1637297108009!5m2!1sen!2seg"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
         </div>
-    </form>
-</footer>
+      </form>
+    </footer>
 
-<!-- =========================== Scroll top button ========================== -->
-<a href="#home" class="fa fa-arrow-up scrollTop-btn" id="scroll-top"></a>
+    <!-- =========================== Scroll top button ========================== -->
+    <a href="#home" class="fa fa-arrow-up scrollTop-btn" id="scroll-top"></a>
 
-<!-- ======================= loader section ========================== -->
-<!-- <div class="loader">
+    <!-- ======================= loader section ========================== -->
+    <!-- <div class="loader">
     <img src="img/loader-2_food.gif" class="loder__img" alt="loader image">
 </div> -->
 
-
-<!--==================== script ====================== -->
+    <!--==================== script ====================== -->
     <script src="js/script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+      integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="js/anime.js"></script>
-</body>
+  </body>
 </html>

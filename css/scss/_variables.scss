@@ -1,5 +1,5 @@
 @mixin liner {
-    transition: 0.2s linear;
+  transition: 0.2s linear;
 }
 
 // =============== collors ===================
@@ -9,17 +9,14 @@ $dark-blu: #130f40;
 $white: #fff;
 $light-color: #666;
 $light-bg: #f7f7f7;
-$border: 0.1rem solid rgba(0,0,0,0.2);
-$box-shadow: 5px 8px rgba(0,0,0,.05);
+$border: 0.1rem solid rgba(0, 0, 0, 0.2);
+$box-shadow: 5px 8px rgba(0, 0, 0, 0.05);
 $transition: 0.2s linear;
 
-
 @mixin font($size) {
-    font-family: 'Satisfy', cursive;
-    font-size: $size;
-    color: $green;
+  font-family: "Satisfy", cursive;
+  font-size: $size;
+  color: $green;
 }
 
 // ========= Breako Points ================
-
-
