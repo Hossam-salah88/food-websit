@@ -597,6 +597,7 @@ header {
 }
 
 .chooseUs__container {
+  margin-top: 90px;
   padding-top: 3.75rem;
   padding-bottom: 3.75rem;
   display: -ms-grid;

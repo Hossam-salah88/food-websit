@@ -51,6 +51,9 @@ const scrollUp = document.querySelector("#scroll-top");
 
 window.onscroll = () => {
   navList.classList.remove("active");
+  searchForm.classList.remove("active");
+  shoppinCard.classList.remove("active");
+  loginForm.classList.remove("active");
 
   // ================== Scroll top button ===============================
 

@@ -2,11 +2,11 @@ document.addEventListener("DOMContentLoaded", () => {
   //Intitial page load animation
   anime
     .timeline({
-      easing: "easeOutExpo",
+      easing: "easeOutExpo"
     })
     .add({
       targets: "header",
-      width: ["0px", "100%"],
+      width: ["0px", "100%"]
     })
 
     .add({
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
       translateY: [20, 0],
       opacity: [0, 1],
       delay: (el, i) => 100 * i,
-      offset: "-=700",
+      offset: "-=700"
     })
 
     .add({
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
       easing: "spring(1, 80, 8, 30)",
       delay: (el, i) => 100 * i,
       offset: "-=700",
-      opacity: [0, 1],
+      opacity: [0, 1]
     })
 
     .add(
@@ -31,24 +31,44 @@ document.addEventListener("DOMContentLoaded", () => {
         targets: ".home__img",
         translateX: [20, 0],
         easing: "spring(1, 80, 8, 30)",
-        opacity: [0, 1],
+        opacity: [0, 1]
       },
       2500
-    )
+    );
 
-    .add({
-      targets:
-        ".chooseUs__title, .chooseUs__subtitle, .chooseUs__paragraph, .chooseUs__data div",
-      translateY: [10, 0],
-      easing: "spring(1, 80, 8, 30)",
-      delay: (el, i) => 100 * i,
-      opacity: [0, 1],
-    })
+  // .add({
+  //   targets:
+  //     ".chooseUs__title, .chooseUs__subtitle, .chooseUs__paragraph, .chooseUs__data div",
+  //   translateY: [10, 0],
+  //   easing: "spring(1, 80, 8, 30)",
+  //   delay: (el, i) => 100 * i,
+  //   opacity: [0, 1]
+  // })
 
-    .add({
-      targets: ".chooseUs__img",
-      translateX: [20, 0],
-      easing: "spring(1, 80, 8, 30)",
-      opacity: [0, 1],
-    });
+  // .add({
+  //   targets: ".chooseUs__img",
+  //   translateX: [20, 0],
+  //   easing: "spring(1, 80, 8, 30)",
+  //   opacity: [0, 1]
+  // });
 });
+
+const chooseUs = document.querySelector(".chooseUs");
+const chooseUsOptions = {
+  threshold: [0, 1],
+  rootMargin: "0px 0px 100px 0px"
+};
+function animation() {
+  anime({
+    targets:
+      ".chooseUs__title, .chooseUs__subtitle, .chooseUs__paragraph, .chooseUs__data div",
+    translateY: [10, 0],
+    easing: "spring(1, 80, 8, 30)",
+    delay: (el, i) => 100 * i,
+    opacity: [0, 1]
+  });
+}
+
+const chooseUsObserver = new IntersectionObserver(animation, chooseUsOptions);
+
+chooseUsObserver.observe(chooseUs);
