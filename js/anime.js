@@ -44,14 +44,30 @@ document.addEventListener("DOMContentLoaded", () => {
   //   delay: (el, i) => 100 * i,
   //   opacity: [0, 1]
   // })
-
-  // .add({
-  //   targets: ".chooseUs__img",
-  //   translateX: [20, 0],
-  //   easing: "spring(1, 80, 8, 30)",
-  //   opacity: [0, 1]
-  // });
 });
+
+// anime for choose us section
+
+let timeLineOne = anime.timeline();
+
+// anime for choose us img section
+let animeChooseUsImg = {
+  targets: ".chooseUs__img",
+  translateX: [0, 40],
+  easing: "spring(1, 80, 8, 30)",
+  opacity: [0, 1],
+  duration: 2000
+};
+
+// anime for choose us data section
+let animeChooseUsData = {
+  targets:
+    ".chooseUs__title, .chooseUs__subtitle, .chooseUs__paragraph, .chooseUs__data div",
+  translateY: [10, 0],
+  easing: "spring(1, 80, 8, 30)",
+  delay: (el, i) => 100 * i,
+  opacity: [0, 1]
+};
 
 const chooseUs = document.querySelector(".chooseUs");
 const chooseUsOptions = {
@@ -62,16 +78,7 @@ function animation(entries, chooseUsObserver) {
   if (!entries[0].isIntersecting) {
     return;
   } else {
-    anime({
-      targets:
-        ".chooseUs__title, .chooseUs__subtitle, .chooseUs__paragraph, .chooseUs__data div",
-      translateY: [10, 0],
-      easing: "spring(1, 80, 8, 30)",
-      delay: (el, i) => 100 * i,
-      opacity: [0, 1],
-      autoplay: true
-      // duration: 2000
-    });
+    timeLineOne.add(animeChooseUsImg).add(animeChooseUsData, "-=700");
     chooseUsObserver.unobserve(entries[0].target);
   }
 }
