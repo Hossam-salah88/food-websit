@@ -56,19 +56,24 @@ document.addEventListener("DOMContentLoaded", () => {
 const chooseUs = document.querySelector(".chooseUs");
 const chooseUsOptions = {
   threshold: [0, 1],
-  rootMargin: "0px 0px 100px 0px"
+  rootMargin: "0px 0px -200px 0px"
 };
-function animation() {
-  anime({
-    targets:
-      ".chooseUs__title, .chooseUs__subtitle, .chooseUs__paragraph, .chooseUs__data div",
-    translateY: [10, 0],
-    easing: "spring(1, 80, 8, 30)",
-    delay: (el, i) => 100 * i,
-    opacity: [0, 1]
-  });
+function animation(entries, chooseUsObserver) {
+  if (!entries[0].isIntersecting) {
+    return;
+  } else {
+    anime({
+      targets:
+        ".chooseUs__title, .chooseUs__subtitle, .chooseUs__paragraph, .chooseUs__data div",
+      translateY: [10, 0],
+      easing: "spring(1, 80, 8, 30)",
+      delay: (el, i) => 100 * i,
+      opacity: [0, 1],
+      autoplay: true
+      // duration: 2000
+    });
+    chooseUsObserver.unobserve(entries[0].target);
+  }
 }
-
 const chooseUsObserver = new IntersectionObserver(animation, chooseUsOptions);
-
 chooseUsObserver.observe(chooseUs);
